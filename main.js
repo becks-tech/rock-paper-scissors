@@ -35,7 +35,7 @@ function playRound(playerSelection, computerSelection){
         return 'Computer wins! ' + computerSelection + ' beats ' + playerSelection + ". Computer's score currently is: " + computerScore;
         
     }
-    
+   
 }
 function score(){
     if(playerScore > computerScore){
@@ -44,7 +44,7 @@ function score(){
         playerScore === computerScore){
             return "It's a tie! The scores are " + playerScore + " and " + computerScore;
     }else {
-        return "You lose! Computer's score was " + computerScore + " with " + tieCount + " ties";
+        return "You lose! Computer's score was " + computerScore + " with " + tieCount + " ties, your score was: " + playerScore;
     }
 }
 
