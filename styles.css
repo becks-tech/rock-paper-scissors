@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.btn-container{
+    display: flex;
+    
+}input{
+    width: 33%;
+    height: 33%;
+    padding: 100px;
+    margin: 30px;
+}
