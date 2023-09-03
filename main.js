@@ -15,14 +15,22 @@ function game(){
           } 
         return computerSelection;
     }
+
+    function disableButtons(){
+        buttons.forEach((button)=>{
+            button.disabled = true;
+        })
+    }
  
     function score(){
         let score = "Rock Paper Scissors"
         if(playerScore === 5){
             score = "You win! Your score is " + playerScore +". Reload the page to play again.";
+            disableButtons()
         } else if(
             computerScore === 5){
             score = "You lose! Computer's score is " + computerScore + ". Reload the page to play again.";
+            disableButtons()
         }
         
         document.querySelector('.result').textContent = score
